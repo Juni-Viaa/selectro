@@ -25,18 +25,8 @@ Route::get('/editproduk', [EditprodukController::class, 'index']);
 Route::get('/keranjang', [KeranjangController::class, 'index']);
 
 
-Route::get('/informasi_akun', function () {
-    return view('informasi_akun');
-});
-
-Route::get('/laporan', function () {
-    return view('laporan');
-});
-
-Route::get('/pencarian', function () {
-    return view('pencarian');
-});
-
-Route::get('/list_produk', function () {
-    return view('produk');
-});
+Route::get('/informasi_akun', [InformasiAkunController::class, 'index']);
+Route::get('/beranda', [BerandaController::class, 'index']);
+Route::get('/laporan', [LaporanController::class, 'index']);
+Route::get('/pencarian', [PencarianController::class, 'index']);
+Route::get('/produk', [ProdukController::class, 'index']);
