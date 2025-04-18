@@ -25,7 +25,6 @@ a {
 .logo {
     font-size: 34px;
     font-weight: bold;
-    color: blue;
 }
 
 .logo span {
@@ -39,6 +38,8 @@ a {
     border-radius: 20px;
 }
 .search-container {
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
     display: flex;
     align-items: center;
 }
