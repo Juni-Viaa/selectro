@@ -40,3 +40,7 @@ Route::get('/pencarian', function () {
 Route::get('/list_produk', function () {
     return view('produk');
 });
+
+Route::get('/praktikum5', function () {
+    return view('praktikum5');
+});
