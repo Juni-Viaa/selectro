@@ -5,6 +5,7 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\KeranjangController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\BerandaController;
 
 //Route::get('/', function () {
 //    return view('welcome');
@@ -39,8 +40,4 @@ Route::get('/pencarian', function () {
 
 Route::get('/list_produk', function () {
     return view('produk');
-});
-
-Route::get('/praktikum5', function () {
-    return view('praktikum5');
 });
