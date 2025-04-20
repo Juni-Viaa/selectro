@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f6f6f6;
+  }
+  
+  .product-container {
+    display: flex;
+    gap: 40px;
+    margin: 40px;
+  }
+  
+  .product-images {
+    flex: 1;
+  }
+  
+  .main-image {
+    width: 100%;
+    height: 400px;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+  }
+  
+  .thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .thumbnail {
+    height: 80px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .product-details {
+    flex: 1;
+    background-color: #c2d9dd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-details h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .price {
+    font-size: 24px;
+    color: #2a9d8f;
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .purchase-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .quantity-control {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .quantity-control button {
+    background-color: #8ecae6;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .quantity-control input {
+    width: 50px;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .subtotal {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .add-to-cart {
+    background-color: #8ecae6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #219ebc;
+  }
+  
+  .main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Opsional, jika ingin ada border radius */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan efek bayangan */
+  }
+  
+  .add-to-cart.checkout {
+    background-color: #8ecae6; /* Warna tombol */
+    color: white; /* Warna teks */
+    padding: 10px 15px; /* Ukuran padding */
+    border: none; /* Hilangkan border */
+    border-radius: 5px; /* Ujung tombol bulat */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Pointer saat hover */
+    text-align: center; /* Pusatkan teks */
+    transition: background-color 0.3s; /* Efek transisi */
+  }
+  
+  .add-to-cart.checkout:hover {
+    background-color: #219ebc; /* Warna saat hover */
+  }
+  
