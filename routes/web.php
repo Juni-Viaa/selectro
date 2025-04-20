@@ -12,13 +12,6 @@ use app\Http\Controllers\GantiPasswordController;
 use app\Http\Controllers\KonfirmasiPesananController;
 use app\Http\Controllers\PesananController;
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-
-//Route::get('/login', function () {
-//    return view('login');
-//});
 
 Route::get('/beranda', function () {
     return view('beranda');
